@@ -12,7 +12,7 @@
     int flag = -1;
 
     std::cout<< "Content-Type: text/html\r\n"<<std::endl;
-    std::cout<< "<HTML><TITLE>color world </TITLE>"
+    std::cout<< "<HTML><head> <link rel=\"icon\" href=\"data:,\"> <title>color world</title> </head>"
                 "<h1>Hello guys</h1>"
                 "<BODY><P>The page color is :"<<std::endl;
 
@@ -40,8 +40,8 @@
         color[flag] = '\0'; 
     }
 
-    std::cout << color<<std::endl;
-    std::cout << "<body bgcolor =\""<<color <<"\"/"<<std::endl;
+    std::cout << color <<std::endl;
+    std::cout << "<body bgcolor =\""<< color <<"\"/>"<<std::endl;
 
     std::cout << "</BODY></HTML>"<< std::endl;
     return 0;
